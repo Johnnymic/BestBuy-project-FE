@@ -1,7 +1,9 @@
 Header{
     width:100%;
-   //  background-color: blue;
+    background-color: rgba(0, 68, 255, 0.799);
     color:white;
+    font-family: sans-serif;
+   //  background-color: rgb(89, 84, 84);
     
     
     .header{
@@ -11,24 +13,108 @@ Header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
       }
 
          .logo a{
-            width:65%;
+            width:40%;
             color: #fff;
             cursor: pointer;
             text-decoration: none;
-           c
-            span{
+            font-size: 22px;
+            font-weight:500;
+           span{
                color: rgb(255, 106, 0);
             }
          }
          
-         .nav{
+         nav{
             width: 30%;
+       
+            display: flex;
+            justify-content: space-between;
             background-color:red;
-           
+            font-weight:600 ;
+            font-size: 18px;
+
+      
+               ul{
+                  display: flex;
+                  justify-content: space-between;
+                   list-style: none;
+                   li a{
+                     color:white;
+                     padding-left: 20px;
+                     text-decoration: none;
+
+                  }
+               }
+               
+             
+            
          }
+
+         section{
+            width: 35%;
+            display: flex;
+            background-color: deeppink;
+            justify-content: space-between;
+            font-weight:600 ;
+            font-size: 18px;
+            position: relative;
+            
+
+               ul{
+                  display: flex;
+                  justify-content: space-between;
+                  list-style: none;
+
+                    
+                  li a{
+                     color:#fff;
+                     padding: 5px;
+                     text-decoration: none;
+                     &:hover{
+                        color: orangered;
+                     }
+                  } 
+                
+               }
+            .cart {
+               width: 18%;
+               background-color: burlywood;
+               display:flex;
+               text-decoration: none;
+               justify-content: space-between;
+               align-items: center;
+               &:hover{
+                  color: orangered;
+               }
+               &.active {
+                  color: darkblue;
+                }
+                a{
+                  text-decoration: none;
+                }
+                  p{
+                     position: absolute;
+                     top: -12px;
+                     right: 6px;
+                     font-size: 18px;
+                     font-weight: 600;
+                  }
+               
+            }
+         }
+         .menu-icon{
+            color:aquamarine;
+            display:flex;
+         }
+
+    @media screen and (max-width: 800px) {
+      nav{ display: block;}
     
+    }
     
 }
+
